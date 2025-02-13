@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  color: var(--txt-clr);
+}
+html {
+  background-color: rgb(228, 228, 228);
+  overflow-x: hidden;
+}
+
+:root {
+  --bg-clr: rgb(228, 228, 228);
+  --txt-clr: #000000;
+  --accent-clr: #F50000;
+  --spacer: 3.3rem 6rem 0 6rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: rgb(228, 228, 228);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  padding: 0 0 0 2rem;
+}
+
+.logo h1 {
+  font-size: 4rem;
+  color: green;
+  margin-bottom: -0.9rem;
+  text-align: right;
+  letter-spacing: 0.3rem;
+}
+
+.logo p {
+  text-align: right;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-right: 0.5rem;
+}
+
+.contact-header {
+  margin: 0.8rem 0 0 0rem;
+  padding: 0 0 0 0.5rem;
+  border-left: 0.1rem orange solid;
+}
+
+.contact-header p:nth-child(2) {
+  color: rgb(255, 136, 0);
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.contact-header :nth-child(1) {
+  font-weight: 100;
+  font-style: italic;
+}
+
+.contact-header p {
+  font-weight: bold;
+}
+
+.header nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(14, 39, 14);
+  padding: 0 3rem;
+  margin-left: 2rem;
+  height: 7rem;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  text-wrap: nowrap;
+}
+
+.header nav a {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  align-content: center;
+  font-weight: 100;
+  color: white;
+  font-style: italic;
+  transition: all 0.3s;
+}
+
+.header nav a:hover {
+  color: rgb(255, 199, 96);
+  transform: scale(1.2);
+}
+
+.header nav a:last-child {
+  background-color: orange;
+  align-self: center;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 1px;
+  border: 2px orange solid;
+  transition: all 0.3s;
+  
+}
+
+.header nav a:last-child:hover {
+  background-color: white;
+  color: orange;
+}
+
+.first-section {
+  margin: 10rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.first-section .intro {
+  padding: 5rem 0 0 4rem ;
+  justify-self: center;
+}
+
+.first-section h1 {
+  font-size: 4rem;
+}
+
+.first-section p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.first-section .image {
+  background-image: url(images/img1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 15rem;
+  border-bottom-left-radius: 15rem;
+  height: 70vh;
+  margin-left: 3rem;
+}
+
+.second-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background-color: rgb(14, 39, 14);
+  padding: 7rem 0;
+}
+
+.second-section .image {
+  background-image: url(images/img2.jpg);
+  background-size: cover;
+  height: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-right: 5rem;
+}
+
+.second-section .overview :nth-child(1) {
+  color: white;
+  font-size: 4rem;
+  margin: 0 0 3rem 1.5rem;
+}
+
+.second-section .overview :last-child{
+  color: white;
+  font-size: 1.2rem;
+  font-style: italic;
+  max-width: 90%;
+  border-left: 2px solid orange;
+  padding: 0 0 3rem 2rem; 
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.third-section {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 7rem 0;
+}
+
+.third-section .image {
+  background-image: url(images/image.jpg);
+  background-size: cover;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  margin-left: 5rem;
+}
+
+.third-section .mission :nth-child(1){
+  font-size: 4rem;
+  margin: 0 0 3rem 10rem;
+}
+
+.third-section .mission :last-child {
+  text-align: end;
+  font-size: 1.2rem;
+  font-style: italic;
+  max-width: 90%;
+  border-right: 2px solid orange;
+  padding: 0 2rem 3rem 2rem; 
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.fourth-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background-color: rgb(14, 39, 14);
+  padding: 7rem 0;
+}
+
+.fourth-section .image {
+  background-image: url(images/image.jpg);
+  background-size: cover;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-right: 5rem;
+}
+
+.fourth-section .support-us :nth-child(1) {
+  color: white;
+  font-size: 4rem;
+  margin: 0 0 3rem 1.5rem;
+}
+
+.fourth-section .support-us :nth-child(2){
+  color: white;
+  font-size: 1.2rem;
+  font-style: italic;
+  max-width: 90%;
+  border-left: 2px solid orange;
+  padding: 0 0 5rem 2rem; 
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  margin-bottom: -3rem;
+}
+
+.fourth-section a {
+  color: white;
+  background-color: orange;
+  align-self: center;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 1px;
+  border: 2px orange solid;
+  transition: all 0.3s;
+  margin-left: 2rem;
+}
+
+.fourth-section a:hover {
+  background-color: white;
+  color: orange;
+  transform: scale(1.2);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5rem;
+  padding: 4rem;
+  background-color: black;
+}
+
+.footer .con1 a {
+  color: white;
+  background-color: orange;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.footer .con1 a:hover {
+  background-color: white;
+  color: orange;
+}
+
+.footer .con1 p {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer h1 {
+  color: rgb(255, 216, 143);
+  margin: 0 0 1.5rem 0;
+  text-wrap: nowrap;
+}
+
+.con1 div {
+  margin: 0 0 1.5rem 0 ;
+}
+
+.footer .con1 div h1 {
+  font-size: 4rem;
+  color: green;
+  margin-bottom: -0.6rem;
+  letter-spacing: 0.3rem;
+}
+
+
+.footer .con {
+  border-left: 2px solid orange;
+  padding: 0 0 0 1.5rem;
+  max-height: 60%;
+}
